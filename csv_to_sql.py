@@ -6,16 +6,17 @@ import os
 csv_files = [
     ('customers.csv', 'customers'),
     ('orders.csv', 'orders'),
-    ('sales.csv', 'sales'),
+    ('sellers.csv', 'sellers'),
     ('products.csv', 'products'),
-    ('delivery.csv', 'delivery'),
-    ('payments.csv', 'payments')  # Added payments.csv for specific handling
+    ('geolocation.csv', 'geolocation'),
+    ('order_items.csv','order_items'),
+    ('payments.csv', 'payments') 
 ]
 
 # Connect to the MySQL database
 conn = mysql.connector.connect(
     host='your_host',
-    user='your_username',
+    user='your_host',
     password='your_password',
     database='your_database'
 )
